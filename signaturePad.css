@@ -1,0 +1,52 @@
+body{
+    background: #BBD2C5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #292E49, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #292E49, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Varela Round', sans-serif;
+    color: whitesmoke;
+}
+
+#canvas, #preview{
+    margin-left: 5px;
+}
+
+#sigDiv {
+    display: flex;
+    align-items: center;
+}
+
+.signature-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.signature-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.BTNS {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px 0 0 0;
+}
+
+#saveSig, #clear {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#saveSig {
+    background: black;
+    color: white;
+}
+
+#clear{
+    border: 1px solid black;
+}

@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Pad</title>
+    <link rel="stylesheet" href="./signaturePad.css">
+</head>
+<body>
+    <div class="signature-form">
+        <div class="signature-block">
+          <div id="sigDiv" class="form-element">
+            <label class="label" for="by">Signature:</label>
+            <input type="hidden" id="by" name="by">
+            <img id ='preview' src="" />
+          </div>
+          <div class="controlBTNS">
+            <p>**use mouse(if on pc) or finger to sign. Then press "Accept Signature"**</p>
+            <div class="BTNS">
+              <div id="saveSig">Accept Signature</div>
+              <div id="clear">Clear Signature</div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="./signaturePad.js"></script>
+</body>
+</html>
