@@ -34,7 +34,7 @@ function getMousePosition(event) {
 
 // Get the position of a touch relative to the canvas
 function getTouchPos(canvasDom, touchEvent) {
-    var rect = canvasDom.getBoundingClientRect();
+    const rect = canvasDom.getBoundingClientRect();
     return {
         x: touchEvent.touches[0].clientX - rect.left,
         y: touchEvent.touches[0].clientY - rect.top
@@ -57,8 +57,8 @@ canvas.addEventListener("touchstart", function (event) {
         event.preventDefault();
     }
     mousePos = getTouchPos(canvas, event);
-    var touch = event.touches[0];
-    var mouseEvent = new MouseEvent("mousedown", {
+    const touch = event.touches[0];
+    const mouseEvent = new MouseEvent("mousedown", {
         clientX: touch.clientX,
         clientY: touch.clientY
     });
@@ -79,8 +79,8 @@ canvas.addEventListener("touchmove", function (event) {
     if (event.target == canvas) {
         event.preventDefault();
     }
-    var touch = event.touches[0];
-    var mouseEvent = new MouseEvent("mousemove", {
+    const touch = event.touches[0];
+    const mouseEvent = new MouseEvent("mousemove", {
         clientX: touch.clientX,
         clientY: touch.clientY
     });
@@ -96,7 +96,7 @@ canvas.addEventListener("touchend", function (event) {
     if (event.target == canvas) {
         event.preventDefault();
     }
-    var mouseEvent = new MouseEvent("mouseup", {});
+    const mouseEvent = new MouseEvent("mouseup", {});
     canvas.dispatchEvent(mouseEvent);
 }, false);
 
